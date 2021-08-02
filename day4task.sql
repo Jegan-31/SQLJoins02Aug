@@ -58,7 +58,7 @@ left outer join titles t on (p.pub_id=t.pub_id)
 left outer join sales s on (s.title_id=t.title_id)
 group by pub_name
 
---9) print the employee names for a given publisher
+--9) print the employee names for a given publishers
 
 select concat(fname,' ',minit,' ',lname) 'Empolyee Name',pub_name 'Publisher Name'from employee e  
 join publishers p on (e.pub_id=p.pub_id) order by [Empolyee Name]
